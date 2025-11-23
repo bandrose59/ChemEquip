@@ -12,7 +12,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     // Fetch raw data from your backend
-    fetch("http://localhost:8000/api/equipment/") // Your backend endpoint
+    fetch("https://magnificent-gratitude-production-e581.up.railway.app/api/equipment/") // Your backend endpoint
       .then((res) => res.json())
       .then((data) => setEquipmentData(data))
       .catch((err) => console.error("Error fetching data:", err));
